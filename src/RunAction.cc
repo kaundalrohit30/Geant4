@@ -1,0 +1,50 @@
+#include "RunAction.hh"
+
+RunAction::RunAction(){
+    G4AnalysisManager *analysisManager = G4AnalysisManager::Instance();
+
+    analysisManager->CreateNtuple("Events", "Events");
+    analysisManager->CreateNtupleIColumn("Event");
+    /*analysisManager->CreateNtupleDColumn("fx");
+    analysisManager->CreateNtupleDColumn("fy");
+    analysisManager->CreateNtupleDColumn("fz");
+    //analysisManager->CreateNtupleDColumn();*/
+
+    analysisManager->FinishNtuple(0);
+
+    analysisManager->CreateNtuple("Angle1", "Angle1");
+    //analysisManager->CreateNtupleDColumn("fEdep");
+    analysisManager->CreateNtupleDColumn("recoTheta_1");
+    analysisManager->CreateNtupleDColumn("simTheta_1");
+    analysisManager->FinishNtuple(1);
+
+    analysisManager->CreateNtuple("Angle2", "Angle2");    
+    analysisManager->CreateNtupleDColumn("recoTheta_2");
+    analysisManager->CreateNtupleDColumn("simTheta_2");
+    analysisManager->FinishNtuple(2);
+}
+
+RunAction::~RunAction(){
+
+
+}
+
+void RunAction::BeginOfRunAction(const G4Run *run){
+
+    G4AnalysisManager *analysisManager = G4AnalysisManager::Instance();
+    G4int runID = run->GetRunID();
+    std::stringstream strRunID;
+    strRunID << runID;
+
+    analysisManager->OpenFile("output_" + strRunID.str() + ".root");
+}
+
+void RunAction::EndOfRunAction(const G4Run *run){
+
+    G4AnalysisManager *analysisManager = G4AnalysisManager::Instance();
+    analysisManager->Write();
+    analysisManager->CloseFile();
+
+    G4int runID = run->GetRunID();
+    G4cout << "Finishing Run " << runID << G4endl;
+}
