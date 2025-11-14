@@ -25,10 +25,11 @@ class SteppingAction : public G4UserSteppingAction{
 
         virtual void UserSteppingAction(const G4Step*);
 
+        //G4double edep;
     private:
         EventAction *fEventAction;
         private:
-        G4double RecoTheta1, RecoTheta2;
+        G4double RecoTheta1, RecoTheta2, edep;
 };
 
 #endif

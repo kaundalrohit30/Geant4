@@ -19,19 +19,38 @@ class EventAction : public G4UserEventAction{
         virtual void BeginOfEventAction(const G4Event*);
         virtual void EndOfEventAction(const G4Event*);
 
-        void E1(G4double eE1){
-            //fEdep1 += edep1;
-            eEnergy1 = eE1;
-
+        void addEdepComp(G4double Edep){
+            fEdepComp += Edep;
+            
         }
 
-        void E2(G4double eE2){
-            //fEdep2 += edep2;
-            eEnergy2 = eE2;
+        void addEdepPhotoP(G4double Edep){
+            fEdepPhotoP += Edep;
+            
         }
+
+        void addEdepTotal(G4double Edep){
+            fEdepTotal += Edep;
+            
+        }
+
+        void addPhotonNumCompt(G4double photonNum){
+            photonNumCompton += photonNum;
+        }
+
+        void addPhotonNumPhotoP(G4double photonNum){
+            photonNumPhotoP += photonNum;
+        }
+
+        void addPhotonNumTotal(G4double photonNum){
+            photonNumTotal += photonNum;
+        }
+
+        
 
     private:
-        G4double eEnergy1, eEnergy2, RecoTheta1, RecoTheta2;
+        G4double fEdepComp, fEdepPhotoP, fEdepTotal;
+        G4int photonNumTotal, photonNumCompton, photonNumPhotoP;
 };
 
 #endif

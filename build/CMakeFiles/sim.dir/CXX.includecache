@@ -2886,6 +2886,12 @@ G4Types.hh
 G4Types.hh
 /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Types.hh
 
+/home/rohit/Geant4_tut/Scintillator_det/src/EventAction.cc
+EventAction.hh
+/home/rohit/Geant4_tut/Scintillator_det/src/EventAction.hh
+cmath
+-
+
 /home/rohit/Geant4_tut/Scintillator_det/src/SteppingAction.cc
 SteppingAction.hh
 /home/rohit/Geant4_tut/Scintillator_det/src/SteppingAction.hh

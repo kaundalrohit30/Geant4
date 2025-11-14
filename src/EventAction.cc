@@ -2,8 +2,12 @@
 #include <cmath>
 
 EventAction::EventAction(RunAction*){
-    eEnergy1 = 0;
-    eEnergy2 = 0;
+    fEdepComp = 0;
+    fEdepPhotoP = 0;
+    fEdepTotal = 0;
+    photonNumTotal = 0;
+    photonNumCompton = 0;
+    photonNumPhotoP = 0;
 }
 
 EventAction::~EventAction(){
@@ -11,8 +15,18 @@ EventAction::~EventAction(){
 }
 
 void EventAction::BeginOfEventAction(const G4Event*){
-    eEnergy1 = 0;
-    eEnergy2 = 0;
+    fEdepComp = 0;
+    fEdepPhotoP = 0;
+    fEdepTotal = 0;
+    photonNumTotal = 0;
+    photonNumCompton = 0;
+    photonNumPhotoP = 0;
+
+    G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
+    G4cout << "**************************************************************************************************************************************************" << G4endl;
+    G4cout << "\v==========oooOOOOOOOooooo  Event Number:>  " << eventID << "   oooOOOOOOOooooo==========\v"<< G4endl;
+    G4cout << "**************************************************************************************************************************************************" << G4endl;
+
 }
 
 void EventAction::EndOfEventAction(const G4Event*){
@@ -24,29 +38,21 @@ void EventAction::EndOfEventAction(const G4Event*){
 
     G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
     analysisManager->FillNtupleIColumn(0,0,eventID);
+    analysisManager->FillNtupleDColumn(0,1,fEdepComp);
+    analysisManager->FillNtupleDColumn(0,2,fEdepPhotoP);
+    analysisManager->FillNtupleDColumn(0,3,fEdepTotal);
     analysisManager->AddNtupleRow(0);
 
-    
-    /*if(eEnergy1 != 0){
-        RecoTheta1 = acos(eMass*(1/inE - 1/(inE-eEnergy1)) - 1);//*(180/M_PI);
+    analysisManager->FillNtupleIColumn(1,0,photonNumCompton);
+    analysisManager->FillNtupleIColumn(1,1,photonNumPhotoP);
+    analysisManager->FillNtupleIColumn(1,2,photonNumTotal);
+    analysisManager->AddNtupleRow(1);
 
-        G4cout << "Energy gamma:> " << eEnergy1 << "  Theta:>" << RecoTheta1 << G4endl;
-        
-        //analysisManager->FillNtupleDColumn(0, 0, fEdep1);
-        analysisManager->FillNtupleDColumn(1,0, RecoTheta1);
-        analysisManager->AddNtupleRow(1);
-    }
+    G4cout << "Compton Photons:>  " << photonNumCompton << "   Photoelectric Photons:>  " << photonNumPhotoP << "   Total:>  " << photonNumTotal << G4endl;
 
-    if(eEnergy2 != 0){
-        RecoTheta2 = acos(eMass*(1/inE - 1/(inE-eEnergy2)) - 1);//*(180/M_PI);
 
-        G4cout << "Energy gamma:> " << eEnergy1 << "  Theta:>" << RecoTheta1 << G4endl;
-        
-        //analysisManager->FillNtupleDColumn(0, 0, fEdep2);
-        analysisManager->FillNtupleDColumn(1,1, RecoTheta2);
-        analysisManager->AddNtupleRow(1);
-    }*/
+    //if(fEdepPhotoP > 0.43)
+    //    G4cout << "EdepC:>  " << fEdepComp << ",  EdepP:>  " << fEdepPhotoP << ",  EdepT:>  " << fEdepTotal << G4endl;
 
-    //analysisManager->AddNtupleRow(0);
     
 }

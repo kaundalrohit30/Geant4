@@ -4,6 +4,8 @@
 #include "G4VModularPhysicsList.hh"
 #include "G4EmStandardPhysics.hh"
 #include "G4OpticalPhysics.hh"
+//#include "G4EmLivermorePolarizedPhysics.hh"
+//#include "G4EmParameters.hh"
 
 class PhysicsList : public G4VModularPhysicsList{
 

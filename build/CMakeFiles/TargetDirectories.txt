@@ -1,4 +1,4 @@
 /home/rohit/Geant4_tut/Scintillator_det/build/CMakeFiles/rebuild_cache.dir
-/home/rohit/Geant4_tut/Scintillator_det/build/CMakeFiles/basic_detector_tut.dir
+/home/rohit/Geant4_tut/Scintillator_det/build/CMakeFiles/Scintillator_det.dir
 /home/rohit/Geant4_tut/Scintillator_det/build/CMakeFiles/edit_cache.dir
 /home/rohit/Geant4_tut/Scintillator_det/build/CMakeFiles/sim.dir

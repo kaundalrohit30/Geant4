@@ -5,14 +5,19 @@ RunAction::RunAction(){
 
     analysisManager->CreateNtuple("Events", "Events");
     analysisManager->CreateNtupleIColumn("Event");
-    /*analysisManager->CreateNtupleDColumn("fx");
-    analysisManager->CreateNtupleDColumn("fy");
-    analysisManager->CreateNtupleDColumn("fz");
-    //analysisManager->CreateNtupleDColumn();*/
-
+    analysisManager->CreateNtupleDColumn("Energy_Deposited_Compton");
+    analysisManager->CreateNtupleDColumn("Energy_Deposited_Photoelectric");
+    analysisManager->CreateNtupleDColumn("Energy_Deposited_Total");
     analysisManager->FinishNtuple(0);
 
-    analysisManager->CreateNtuple("Angle1", "Angle1");
+    analysisManager->CreateNtuple("Photon_Count", "Photon_Count");
+    analysisManager->CreateNtupleIColumn("Scintillation_Photon_Count_Dist_Compton");
+    analysisManager->CreateNtupleIColumn("Scintillation_Photon_Count_Dist_Photoproduction");
+    analysisManager->CreateNtupleIColumn("Scintillation_Photon_Count_Dist_Total");
+
+    analysisManager->FinishNtuple(1);
+
+    /*analysisManager->CreateNtuple("Angle1", "Angle1");
     //analysisManager->CreateNtupleDColumn("fEdep");
     analysisManager->CreateNtupleDColumn("recoTheta_1");
     analysisManager->CreateNtupleDColumn("simTheta_1");
@@ -21,7 +26,7 @@ RunAction::RunAction(){
     analysisManager->CreateNtuple("Angle2", "Angle2");    
     analysisManager->CreateNtupleDColumn("recoTheta_2");
     analysisManager->CreateNtupleDColumn("simTheta_2");
-    analysisManager->FinishNtuple(2);
+    analysisManager->FinishNtuple(2);*/
 }
 
 RunAction::~RunAction(){

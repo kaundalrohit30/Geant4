@@ -7,8 +7,8 @@
 #include "G4VisExecutive.hh"
 
 #include "PhysicsList.hh"
-//#include "DetectorConstruction.hh"
-#include "DetectorConstruction_LYSO.hh"
+#include "DetectorConstruction.hh"
+//#include "DetectorConstruction_LYSO.hh"
 #include "ActionInitialization.hh"
 
 
@@ -24,8 +24,8 @@ int main(int argc, char** argv){
 
     //Physics List
     runManager->SetUserInitialization(new PhysicsList());
-    //runManager->SetUserInitialization(new DetectorConstruction());
-    runManager->SetUserInitialization(new DetectorConstruction_LYSO());
+    runManager->SetUserInitialization(new DetectorConstruction());
+    //runManager->SetUserInitialization(new DetectorConstruction_LYSO());
     runManager->SetUserInitialization(new ActionInitialization());
 
     if(argc == 1){

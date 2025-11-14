@@ -112,6 +112,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/basic_detector_tut.dir/DependInfo.cmake"
+  "CMakeFiles/Scintillator_det.dir/DependInfo.cmake"
   "CMakeFiles/sim.dir/DependInfo.cmake"
   )

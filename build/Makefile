@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named basic_detector_tut
+# Target rules for targets named Scintillator_det
 
 # Build rule for target.
-basic_detector_tut: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 basic_detector_tut
-.PHONY : basic_detector_tut
+Scintillator_det: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Scintillator_det
+.PHONY : Scintillator_det
 
 # fast build rule for target.
-basic_detector_tut/fast:
-	$(MAKE) -f CMakeFiles/basic_detector_tut.dir/build.make CMakeFiles/basic_detector_tut.dir/build
-.PHONY : basic_detector_tut/fast
+Scintillator_det/fast:
+	$(MAKE) -f CMakeFiles/Scintillator_det.dir/build.make CMakeFiles/Scintillator_det.dir/build
+.PHONY : Scintillator_det/fast
 
 #=============================================================================
 # Target rules for targets named sim
@@ -386,7 +386,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... basic_detector_tut"
+	@echo "... Scintillator_det"
 	@echo "... edit_cache"
 	@echo "... sim"
 	@echo "... sim.o"

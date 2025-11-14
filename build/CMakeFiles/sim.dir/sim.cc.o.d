@@ -633,9 +633,7 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ProductionCuts.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MCCIndexConversionTable.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmStandardPhysics.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalPhysics.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalParameters.hh \
- /home/rohit/Geant4_tut/Scintillator_det/include/DetectorConstruction.hh \
+ /home/rohit/Geant4_tut/Scintillator_det/include/DetectorConstruction_LYSO.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Box.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LogicalVolume.hh \
@@ -660,4 +658,76 @@ CMakeFiles/sim.dir/sim.cc.o: \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleDefinition.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleGun.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VPrimaryGenerator.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleTable.hh
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleTable.hh \
+ /home/rohit/Geant4_tut/Scintillator_det/include/RunAction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UserRunAction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Run.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AnalysisManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VAnalysisManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AnalysisManagerState.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AnalysisVerbose.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AnalysisUtilities.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VTBaseHnManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4HnInformation.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4BinScheme.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Fcn.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VAnalysisManager.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4HnManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4BaseAnalysisManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NtupleBookingManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/ntuple_booking \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/cids \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/cid \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/typedefs \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/forit \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NtupleBookingManager.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VNtupleManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VFileManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4BaseFileManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VTHnFileManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TH1ToolsManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4THnToolsManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4THnManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4THnManager.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4THnMessenger.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4THnToolsManager.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4THnMessenger.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Tokenizer.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TH2ToolsManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TH3ToolsManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TP1ToolsManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TP2ToolsManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/h1d \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/h1 \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/b1 \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/base_histo \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/histo_data \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/axes \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/axis \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/eqT \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/h2d \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/h2 \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/b2 \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/h3d \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/h3 \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/b3 \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/p1d \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/p1 \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/profile_data \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/p2d \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/histo/p2 \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ToolsAnalysisManager.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GenericAnalysisManager.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GenericFileManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GenericFileManager.icc \
+ /home/rohit/Geant4_tut/Scintillator_det/include/EventAction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UserEventAction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Event.hh \
+ /home/rohit/Geant4_tut/Scintillator_det/include/SteppingAction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UserSteppingAction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Step.hh \
+ /home/rohit/Geant4_tut/Scintillator_det/include/DetectorConstruction.hh \
+ /home/rohit/Geant4_tut/Scintillator_det/include/DetectorConstruction_LYSO.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VProcess.hh

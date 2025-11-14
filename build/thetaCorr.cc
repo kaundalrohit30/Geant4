@@ -2,7 +2,7 @@ void thetaCorr(){
 
     TFile *f1 = new TFile("output_0.root", "READ");
 
-    TH2F *histCorr = new TH2F("Angle Corr", "Angle Corr;#theta_{sim};#theta_{reco}", 100, 0, 180, 100, 0, 90);
+    TH2F *histCorr = new TH2F("Angle Corr", "Angle Corr;#theta_{sim};#theta_{reco}", 100, 0, 180, 100, 0, 180);
 
     
     TTree *t1 = (TTree*)f1->Get("Angle1"); 

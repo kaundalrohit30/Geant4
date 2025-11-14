@@ -1392,145 +1392,54 @@ CMakeFiles/sim.dir/src/EventAction.cc.o
  /home/rohit/Geant4_tut/Scintillator_det/src/EventAction.cc
 CMakeFiles/sim.dir/src/PhysicsList.cc.o
  ../include/PhysicsList.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Normal3D.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Point3D.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Transform3D.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Transform3D.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Vector3D.h
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Units/PhysicalConstants.h
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Units/SystemOfUnits.h
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Utility/defs.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/AxisAngle.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/AxisAngle.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/LorentzVector.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/LorentzVector.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/Rotation.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/Rotation.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationInterfaces.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationX.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationX.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationY.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationY.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationZ.h
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationZ.icc
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.h
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AffineTransform.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AffineTransform.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Allocator.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AllocatorPool.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AutoLock.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Cache.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4CacheDetails.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ChemTimeStepModel.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DNAModelSubType.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DataVector.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DataVector.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DensityEffectCalculator.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DynamicParticle.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DynamicParticle.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ElectronOccupancy.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Element.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ElementTable.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ElementVector.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmFluoDirectory.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmLivermorePhysics.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmLivermorePolarizedPhysics.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmParameters.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmSaturation.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmStandardPhysics.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EnvironmentUtils.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Exception.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ExceptionSeverity.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GeomSplitter.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GlobalConfig.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4IonisParamElm.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4IonisParamMat.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Isotope.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4IsotopeVector.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Log.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LogicalVolume.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LogicalVolume.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LorentzVector.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MCCIndexConversionTable.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Material.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialCutsCouple.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialPropertiesIndex.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialPropertiesTable.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialPropertyVector.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialTable.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MscStepLimitType.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationHistory.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationHistory.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationHistoryPool.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevel.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevel.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevelRep.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevelRep.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NuclearFormfactorType.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalParameters.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalPhysics.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OrderedTable.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PDefManager.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleDefinition.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleDefinition.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleMomentum.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleTable.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleTable.icc
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleTableIterator.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsFreeVector.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsListHelper.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsListOrderingParameter.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsModelCatalog.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsVector.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsVector.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsVectorType.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ProductionCuts.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ProductionCutsTable.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ReferenceCountedHandle.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Region.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Region.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4RotationMatrix.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4SandiaTable.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Step.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Step.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4StepPoint.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4StepPoint.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4StepStatus.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4SteppingControl.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4String.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4String.icc
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ThreadLocalSingleton.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Threading.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ThreeVector.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TouchableHandle.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TouchableHistory.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TouchableHistory.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Track.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Track.icc
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TrackStatus.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TrackVector.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Transform3D.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Types.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VModularPhysicsList.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VPhysicalVolume.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VPhysicalVolume.icc
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VPhysicsConstructor.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VTouchable.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUPLSplitter.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserPhysicsList.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserTrackInformation.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ios.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/geomdefs.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/geomwdefs.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/globals.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/pwdefs.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/rundefs.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/templates.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tls.hh
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/trkdefs.hh
  /home/rohit/Geant4_tut/Scintillator_det/src/PhysicsList.cc
 CMakeFiles/sim.dir/src/PrimaryGenerator.cc.o
  ../include/PrimaryGenerator.hh

@@ -1,17 +1,10 @@
-CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
- /home/rohit/Geant4_tut/Scintillator_det/src/ActionInitialization.cc \
+CMakeFiles/sim.dir/src/SteppingAction.cc.o: \
+ /home/rohit/Geant4_tut/Scintillator_det/src/SteppingAction.cc \
  /usr/include/stdc-predef.h \
- /home/rohit/Geant4_tut/Scintillator_det/include/ActionInitialization.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserActionInitialization.hh \
- /home/rohit/Geant4_tut/Scintillator_det/include/PrimaryGenerator.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleDefinition.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PDefManager.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AutoLock.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Threading.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Types.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GlobalConfig.hh \
- /usr/include/c++/11/complex \
+ /home/rohit/Geant4_tut/Scintillator_det/include/SteppingAction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UserSteppingAction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Step.hh \
+ /usr/include/c++/11/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -22,32 +15,19 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/pstl/pstl_config.h \
- /usr/include/c++/11/bits/cpp_type_traits.h \
- /usr/include/c++/11/ext/type_traits.h /usr/include/c++/11/cmath \
- /usr/include/math.h \
+ /usr/include/c++/11/pstl/pstl_config.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/11/bits/std_abs.h /usr/include/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
@@ -70,6 +50,18 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/c++/11/bits/std_abs.h /usr/include/c++/11/cmath \
+ /usr/include/c++/11/bits/cpp_type_traits.h \
+ /usr/include/c++/11/ext/type_traits.h /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/11/bits/specfun.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
@@ -95,7 +87,11 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/sstream \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ios.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Types.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GlobalConfig.hh \
+ /usr/include/c++/11/complex /usr/include/c++/11/sstream \
  /usr/include/c++/11/istream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h /usr/include/c++/11/bits/postypes.h \
@@ -152,9 +148,8 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /usr/include/c++/11/bits/stl_construct.h /usr/include/c++/11/string_view \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/string_view.tcc \
- /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdlib \
- /usr/include/c++/11/cstdio /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdio \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
@@ -183,19 +178,27 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tls.hh \
+ /usr/include/c++/11/iostream /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/quoted_string.h \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/globals.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ios.hh \
- /usr/include/c++/11/iostream /usr/include/c++/11/algorithm \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/c++/11/functional /usr/include/c++/11/tuple \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/ext/aligned_buffer.h \
@@ -226,21 +229,40 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Exception.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ExceptionSeverity.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EnvironmentUtils.hh \
- /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
- /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h \
- /usr/include/c++/11/bits/unique_ptr.h \
- /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/mutex \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ThreeVector.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Utility/defs.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VPhysicalVolume.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/geomdefs.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4RotationMatrix.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/Rotation.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/LorentzVector.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/LorentzVector.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/AxisAngle.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/AxisAngle.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationX.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationX.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationY.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationY.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationZ.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationZ.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/Rotation.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GeomSplitter.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/geomwdefs.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AutoLock.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Threading.hh \
  /usr/include/c++/11/condition_variable \
  /usr/include/c++/11/bits/shared_ptr.h \
  /usr/include/c++/11/bits/shared_ptr_base.h \
@@ -251,28 +273,143 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /usr/include/c++/11/bits/atomic_futex.h \
  /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/this_thread_sleep.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/pwdefs.hh \
- /usr/include/c++/11/stdlib.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleDefinition.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleGun.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VPrimaryGenerator.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ThreeVector.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Utility/defs.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleDefinition.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PrimaryVertex.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VPhysicalVolume.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4StepPoint.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Allocator.hh \
  /usr/include/c++/11/cstddef \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AllocatorPool.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PrimaryParticle.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4SteppingControl.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4StepStatus.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TouchableHandle.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VTouchable.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TouchableHistory.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationHistory.hh \
+ /usr/include/assert.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AffineTransform.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Transform3D.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Transform3D.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Point3D.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Vector3D.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Normal3D.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AffineTransform.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevel.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevelRep.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevelRep.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevel.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationHistoryPool.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationHistory.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LogicalVolume.hh \
+ /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Region.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Region.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LogicalVolume.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TouchableHistory.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ReferenceCountedHandle.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Material.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Element.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ElementTable.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ElementVector.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4IonisParamElm.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Isotope.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4IsotopeVector.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4IonisParamMat.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DensityEffectCalculator.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialPropertiesTable.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialPropertiesIndex.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialPropertyVector.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsFreeVector.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsVector.hh \
+ /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Log.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsVectorType.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsVector.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialTable.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4SandiaTable.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OrderedTable.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DataVector.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DataVector.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4StepPoint.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TrackVector.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Step.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Track.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/trkdefs.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DynamicParticle.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ElectronOccupancy.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/pwdefs.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LorentzVector.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleDefinition.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PDefManager.hh \
+ /usr/include/c++/11/stdlib.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleDefinition.icc \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleMomentum.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleTable.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleTableIterator.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleTable.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DynamicParticle.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TrackStatus.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserTrackInformation.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsModelCatalog.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Track.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Step.hh \
+ /home/rohit/Geant4_tut/Scintillator_det/include/DetectorConstruction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserDetectorConstruction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Box.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GeomTypes.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GeomConfig.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4CSGSolid.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VSolid.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VSolid.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Polyhedron.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/HepPolyhedron.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TwoVector.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/TwoVector.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/TwoVector.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Point3D.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Normal3D.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Visible.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Visible.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Box.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LogicalVolume.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VPhysicalVolume.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PVPlacement.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Material.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NistManager.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ICRU90StoppingData.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NistElementBuilder.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NistMaterialBuilder.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Pow.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Exp.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4SystemOfUnits.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UnitsTable.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UnitsTable.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VisAttributes.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/graphics_reps_defs.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Colour.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Color.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VisAttributes.icc \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Color.hh \
+ /home/rohit/Geant4_tut/Scintillator_det/include/EventAction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UserEventAction.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Event.hh \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/evtdefs.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PrimaryVertex.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PrimaryParticle.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4HCofThisEvent.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VHitsCollection.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DCofThisEvent.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VDigiCollection.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TrajectoryContainer.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VTrajectory.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserEventInformation.hh \
  /home/rohit/Geant4_tut/Scintillator_det/include/RunAction.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UserRunAction.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Run.hh \
@@ -283,15 +420,6 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AnalysisManagerState.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AnalysisVerbose.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AnalysisUtilities.hh \
- /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_raw_storage_iter.h \
- /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/shared_ptr_atomic.h \
- /usr/include/c++/11/backward/auto_ptr.h \
- /usr/include/c++/11/pstl/glue_memory_defs.h /usr/include/c++/11/fstream \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VTBaseHnManager.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4HnInformation.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4BinScheme.hh \
@@ -299,8 +427,6 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VAnalysisManager.icc \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4HnManager.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4BaseAnalysisManager.hh \
- /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
- /usr/include/c++/11/bits/stl_multiset.h \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NtupleBookingManager.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/ntuple_booking \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/tools/cids \
@@ -352,19 +478,6 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GenericAnalysisManager.icc \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GenericFileManager.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GenericFileManager.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UnitsTable.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UnitsTable.icc \
- /home/rohit/Geant4_tut/Scintillator_det/include/EventAction.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UserEventAction.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Event.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/evtdefs.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4HCofThisEvent.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VHitsCollection.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DCofThisEvent.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VDigiCollection.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TrajectoryContainer.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VTrajectory.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserEventInformation.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4RunManager.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Event.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EventManager.hh \
@@ -376,100 +489,15 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4SmartTrackStack.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4SubEventTrackStack.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4SubEvent.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Track.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/trkdefs.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LogicalVolume.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Region.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GeomSplitter.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/geomwdefs.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Region.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VPhysicalVolume.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/geomdefs.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4RotationMatrix.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/Rotation.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/LorentzVector.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/LorentzVector.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/AxisAngle.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/AxisAngle.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationX.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationX.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationY.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationY.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationZ.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/RotationZ.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/Rotation.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VPhysicalVolume.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LogicalVolume.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DynamicParticle.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ElectronOccupancy.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Log.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LorentzVector.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DynamicParticle.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TrackStatus.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TouchableHandle.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VTouchable.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TouchableHistory.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationHistory.hh \
- /usr/include/assert.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AffineTransform.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Transform3D.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Transform3D.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Point3D.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Vector3D.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Geometry/Normal3D.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AffineTransform.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevel.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevelRep.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevelRep.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationLevel.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationHistoryPool.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NavigationHistory.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TouchableHistory.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ReferenceCountedHandle.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserTrackInformation.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsModelCatalog.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Material.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Element.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ElementTable.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ElementVector.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4IonisParamElm.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Isotope.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4IsotopeVector.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4IonisParamMat.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DensityEffectCalculator.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialPropertiesTable.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialPropertiesIndex.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialPropertyVector.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsFreeVector.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsVector.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsVectorType.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PhysicsVector.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MaterialTable.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4SandiaTable.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OrderedTable.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DataVector.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4DataVector.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Track.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Step.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4StepPoint.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4SteppingControl.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4StepStatus.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4StepPoint.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TrackVector.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Step.icc \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PrimaryTransformer.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleTable.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleTableIterator.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleTable.icc \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TrackingManager.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4SteppingManager.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Navigator.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NormalNavigation.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VNavigation.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VSolid.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VSolid.icc \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AuxiliaryNavServices.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4AuxiliaryNavServices.icc \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NormalNavigation.icc \
@@ -564,40 +592,6 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/rundefs.hh \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/list.tcc \
- /home/rohit/Geant4_tut/Scintillator_det/include/SteppingAction.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4UserSteppingAction.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Step.hh \
- /home/rohit/Geant4_tut/Scintillator_det/include/DetectorConstruction.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserDetectorConstruction.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Box.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GeomTypes.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GeomConfig.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4CSGSolid.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Polyhedron.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/HepPolyhedron.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4TwoVector.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/TwoVector.h \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/TwoVector.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Point3D.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Normal3D.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Visible.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Visible.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Box.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LogicalVolume.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VPhysicalVolume.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4PVPlacement.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Material.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NistManager.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ICRU90StoppingData.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NistElementBuilder.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NistMaterialBuilder.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Pow.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Exp.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VisAttributes.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/graphics_reps_defs.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Colour.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Color.hh \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VisAttributes.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Color.hh \
  /home/rohit/Geant4_tut/Scintillator_det/include/DetectorConstruction_LYSO.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ParticleDefinition.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VProcess.hh

@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=basic_detector_tut
+CMAKE_PROJECT_NAME:STATIC=Scintillator_det
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -364,6 +364,15 @@ ROOT_rootmv_CMD:FILEPATH=/home/rohit/root/bin/rootmv
 
 //Path to a program.
 ROOT_rootrm_CMD:FILEPATH=/home/rohit/root/bin/rootrm
+
+//Value Computed by CMake
+Scintillator_det_BINARY_DIR:STATIC=/home/rohit/Geant4_tut/Scintillator_det/build
+
+//Value Computed by CMake
+Scintillator_det_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Scintillator_det_SOURCE_DIR:STATIC=/home/rohit/Geant4_tut/Scintillator_det
 
 //Path to a file.
 VDT_INCLUDE_DIR:PATH=/home/rohit/root/include
