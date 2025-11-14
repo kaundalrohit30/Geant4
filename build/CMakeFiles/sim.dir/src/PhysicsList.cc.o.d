@@ -277,4 +277,10 @@ CMakeFiles/sim.dir/src/PhysicsList.cc.o: \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GeomSplitter.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/geomwdefs.hh \
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Region.icc \
- /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmStandardPhysics.hh
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmStandardPhysics.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalPhysics.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalParameters.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ThreeVector.hh \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Utility/defs.h \
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.icc
