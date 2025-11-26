@@ -101,57 +101,76 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
 
     //const std::vector<const G4Track*> *electron_Secondaries = step->GetSecondaryInCurrentStep();
 
+
     if(copyNo > 0 and currentParticleName == "e-" and creatorName == "compt"){
         //G4cout << "electronTrackID:>    " << currentTrackID << G4endl;
         const std::vector<const G4Track*> *electron_Secondaries = step->GetSecondaryInCurrentStep();
-        //G4cout << "Particle Name:>   " << currentParticleName << "   electronTrackID:>  " << currentTrackID << "   electron secondaries:>  " << electron_Secondaries->size() << "   Process:>  " << currentStepProcess << G4endl;
-        
-        if(currentStepProcess == "eIoni"){
-
-            fEventAction->addPhotonNumCompt(electron_Secondaries->size());
-
-            /*for(int i = 0; i < electron_Secondaries->size(); i++){
+        int count = 0;
+        for(int i = 0; i < electron_Secondaries->size(); i++){
                 const G4Track *secTrack = (*electron_Secondaries)[i];
                 const G4ParticleDefinition *particleDef = secTrack->GetDefinition();
                 G4String particleName = particleDef->GetParticleName();
-                
-                G4cout << "eIon Particles:>  " << particleName << G4endl;
-            }*/
+                const G4VProcess *productionProcess = secTrack->GetCreatorProcess();
+                G4String processName = productionProcess->GetProcessName();
 
-        }
+                if(particleName == "opticalphoton" and processName == "Scintillation"){
+                    count++;
+                }
+                //G4cout << "eIon Particles:>  " << particleName << "   Productoion Process:>   " << processName << G4endl;
+            }
+
+            fEventAction->addPhotonNumCompt(count);
+
+        //G4cout << "Particle Name:>   " << currentParticleName << "   electronTrackID:>  " << currentTrackID << "   electron secondaries:>  " << electron_Secondaries->size() << "   Process:>  " << currentStepProcess << G4endl;
+        //G4cout << "Process Name:>  " << currentStepProcess << "  Secondaries:>   " << electron_Secondaries->size() << G4endl;
+        
     
     
     }
 
 
     else if(copyNo > 0 and currentParticleName == "e-" and creatorName == "phot"){
-        //G4cout << "electronTrackID:>    " << currentTrackID << G4endl;
         const std::vector<const G4Track*> *electron_Secondaries = step->GetSecondaryInCurrentStep();
-        //G4cout << "Particle Name:>   " << currentParticleName << "   electronTrackID:>  " << currentTrackID << "   electron secondaries:>  " << electron_Secondaries->size() << "   Process:>  " << currentStepProcess << G4endl;
-        
-        if(currentStepProcess == "eIoni"){
+        int count = 0;
+        for(int i = 0; i < electron_Secondaries->size(); i++){
+                const G4Track *secTrack = (*electron_Secondaries)[i];
+                const G4ParticleDefinition *particleDef = secTrack->GetDefinition();
+                G4String particleName = particleDef->GetParticleName();
+                const G4VProcess *productionProcess = secTrack->GetCreatorProcess();
+                G4String processName = productionProcess->GetProcessName();
 
-            fEventAction->addPhotonNumPhotoP(electron_Secondaries->size());
+                if(particleName == "opticalphoton" and processName == "Scintillation"){
+                    count++;
+                }
 
+                
+                //G4cout << "eIon Particles:>  " << particleName << "   Productoion Process:>   " << processName << G4endl;
+            }
 
-        }
-    
+            fEventAction->addPhotonNumPhotoP(count); 
     
     }
 
 
-    if(copyNo > 0 and currentParticleName == "e-" and (creatorName == "phot" or creatorName == "compt")){
-        //G4cout << "electronTrackID:>    " << currentTrackID << G4endl;
+    if(copyNo > 0 and currentParticleName == "e-"){
         const std::vector<const G4Track*> *electron_Secondaries = step->GetSecondaryInCurrentStep();
-        //G4cout << "Particle Name:>   " << currentParticleName << "   electronTrackID:>  " << currentTrackID << "   electron secondaries:>  " << electron_Secondaries->size() << "   Process:>  " << currentStepProcess << G4endl;
-        
-        if(currentStepProcess == "eIoni"){
+        int count = 0;
+        for(int i = 0; i < electron_Secondaries->size(); i++){
+                const G4Track *secTrack = (*electron_Secondaries)[i];
+                const G4ParticleDefinition *particleDef = secTrack->GetDefinition();
+                G4String particleName = particleDef->GetParticleName();
+                const G4VProcess *productionProcess = secTrack->GetCreatorProcess();
+                G4String processName = productionProcess->GetProcessName();
 
-            fEventAction->addPhotonNumTotal(electron_Secondaries->size());
+                if(particleName == "opticalphoton" and processName == "Scintillation"){
+                    count++;
+                }
 
+                
+                //G4cout << "eIon Particles:>  " << particleName << "   Productoion Process:>   " << processName << G4endl;
+            }
 
-        }
-    
+            fEventAction->addPhotonNumTotal(count);
     
     }
 

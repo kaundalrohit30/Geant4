@@ -48,7 +48,7 @@ void EventAction::EndOfEventAction(const G4Event*){
     analysisManager->FillNtupleIColumn(1,2,photonNumTotal);
     analysisManager->AddNtupleRow(1);
 
-    G4cout << "Compton Photons:>  " << photonNumCompton << "   Photoelectric Photons:>  " << photonNumPhotoP << "   Total:>  " << photonNumTotal << G4endl;
+    //G4cout << "Compton Photons:>  " << photonNumCompton << "   Photoelectric Photons:>  " << photonNumPhotoP << "   Total:>  " << photonNumTotal << G4endl;
 
 
     //if(fEdepPhotoP > 0.43)

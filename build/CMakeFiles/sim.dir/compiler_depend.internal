@@ -697,7 +697,9 @@ CMakeFiles/sim.dir/sim.cc.o
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ProductionCuts.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MCCIndexConversionTable.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmStandardPhysics.hh
- /home/rohit/Geant4_tut/Scintillator_det/include/DetectorConstruction_LYSO.hh
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalPhysics.hh
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalParameters.hh
+ /home/rohit/Geant4_tut/Scintillator_det/include/DetectorConstruction.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserDetectorConstruction.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Box.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LogicalVolume.hh
@@ -3223,6 +3225,12 @@ CMakeFiles/sim.dir/src/PhysicsList.cc.o
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/geomwdefs.hh
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Region.icc
  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmStandardPhysics.hh
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalPhysics.hh
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalParameters.hh
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ThreeVector.hh
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.h
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Utility/defs.h
+ /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.icc
 
 CMakeFiles/sim.dir/src/PrimaryGenerator.cc.o
  /home/rohit/Geant4_tut/Scintillator_det/src/PrimaryGenerator.cc

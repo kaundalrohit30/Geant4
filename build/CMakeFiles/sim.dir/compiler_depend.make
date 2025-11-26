@@ -696,7 +696,9 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
   /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ProductionCuts.hh \
   /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MCCIndexConversionTable.hh \
   /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmStandardPhysics.hh \
-  ../include/DetectorConstruction_LYSO.hh \
+  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalPhysics.hh \
+  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalParameters.hh \
+  ../include/DetectorConstruction.hh \
   /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4VUserDetectorConstruction.hh \
   /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Box.hh \
   /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4LogicalVolume.hh \
@@ -3216,7 +3218,13 @@ CMakeFiles/sim.dir/src/PhysicsList.cc.o: ../src/PhysicsList.cc \
   /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4GeomSplitter.hh \
   /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/geomwdefs.hh \
   /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4Region.icc \
-  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmStandardPhysics.hh
+  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4EmStandardPhysics.hh \
+  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalPhysics.hh \
+  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalParameters.hh \
+  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ThreeVector.hh \
+  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.h \
+  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Utility/defs.h \
+  /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/CLHEP/Vector/ThreeVector.icc
 
 CMakeFiles/sim.dir/src/PrimaryGenerator.cc.o: ../src/PrimaryGenerator.cc \
   /usr/include/stdc-predef.h \
@@ -4757,6 +4765,10 @@ CMakeFiles/sim.dir/src/SteppingAction.cc.o: ../src/SteppingAction.cc \
 /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4ICRU90StoppingData.hh:
 
 /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4NistManager.hh:
+
+/home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalParameters.hh:
+
+/home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4OpticalPhysics.hh:
 
 /home/rohit/Geant4/geant4-v11.3.2/geant4_install/include/Geant4/G4MCCIndexConversionTable.hh:
 

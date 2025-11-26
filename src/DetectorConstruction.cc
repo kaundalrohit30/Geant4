@@ -71,14 +71,14 @@ void DetectorConstruction::DefineMaterial(){
     ptGAGG->AddProperty("RINDEX", energyGAGG, rIndexGAGG, 6);
     ptGAGG->AddProperty("SCINTILLATIONCOMPONENT1", ScintPhoEnergy, ScintFastArray, false, true);
     ptGAGG->AddProperty("SCINTILLATIONCOMPONENT2", ScintPhoEnergy, ScintSlowArray, false, true);
-    ptGAGG->AddConstProperty("SCINTILLATIONYIELD", 28244 / MeV);
+    ptGAGG->AddConstProperty("SCINTILLATIONYIELD", 1000/MeV );//28244 / MeV);
     ptGAGG->AddConstProperty("RESOLUTIONSCALE", 1.0);
     ptGAGG->AddConstProperty("SCINTILLATIONTIMECONSTANT1", 50.1 * ns);
     ptGAGG->AddConstProperty("SCINTILLATIONTIMECONSTANT2", 321.5 * ns);
     ptGAGG->AddConstProperty("SCINTILLATIONYIELD1", 0.392);
     ptGAGG->AddConstProperty("SCINTILLATIONYIELD2", 0.608);
     ptGAGG->AddConstProperty("SCINTILLATIONRISETIME1", 8 * ns);
-    //GAGG_mat->GetIonisation()->SetBirksConstant(0. * mm / MeV);
+    GAGG_mat->GetIonisation()->SetBirksConstant(0. * mm / MeV);
     GAGG_mat->SetMaterialPropertiesTable(ptGAGG);
 
 
