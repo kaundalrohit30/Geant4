@@ -14,6 +14,7 @@ RunAction::RunAction(){
     analysisManager->CreateNtupleIColumn("Scintillation_Photon_Count_Dist_Compton");
     analysisManager->CreateNtupleIColumn("Scintillation_Photon_Count_Dist_Photoproduction");
     analysisManager->CreateNtupleIColumn("Scintillation_Photon_Count_Dist_Total");
+    analysisManager->CreateNtupleIColumn("Total_Photon_Count");
 
     analysisManager->FinishNtuple(1);
 

@@ -8,6 +8,7 @@ EventAction::EventAction(RunAction*){
     photonNumTotal = 0;
     photonNumCompton = 0;
     photonNumPhotoP = 0;
+    totalOptPhoton = 0;
 }
 
 EventAction::~EventAction(){
@@ -21,6 +22,7 @@ void EventAction::BeginOfEventAction(const G4Event*){
     photonNumTotal = 0;
     photonNumCompton = 0;
     photonNumPhotoP = 0;
+    totalOptPhoton = 0;
 
     G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
     G4cout << "**************************************************************************************************************************************************" << G4endl;
@@ -46,6 +48,7 @@ void EventAction::EndOfEventAction(const G4Event*){
     analysisManager->FillNtupleIColumn(1,0,photonNumCompton);
     analysisManager->FillNtupleIColumn(1,1,photonNumPhotoP);
     analysisManager->FillNtupleIColumn(1,2,photonNumTotal);
+    analysisManager->FillNtupleIColumn(1,3,totalOptPhoton);
     analysisManager->AddNtupleRow(1);
 
     //G4cout << "Compton Photons:>  " << photonNumCompton << "   Photoelectric Photons:>  " << photonNumPhotoP << "   Total:>  " << photonNumTotal << G4endl;

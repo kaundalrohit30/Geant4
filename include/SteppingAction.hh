@@ -30,6 +30,7 @@ class SteppingAction : public G4UserSteppingAction{
         EventAction *fEventAction;
         private:
         G4double RecoTheta1, RecoTheta2, edep;
+        G4int optPhotonId;
 };
 
 #endif

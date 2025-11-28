@@ -44,13 +44,18 @@ class EventAction : public G4UserEventAction{
 
         void addPhotonNumTotal(G4double photonNum){
             photonNumTotal += photonNum;
+
+        }
+
+        void addAlloptPhoton(G4double photonNum){
+            totalOptPhoton += photonNum;
         }
 
         
 
     private:
         G4double fEdepComp, fEdepPhotoP, fEdepTotal;
-        G4int photonNumTotal, photonNumCompton, photonNumPhotoP;
+        G4int photonNumTotal, photonNumCompton, photonNumPhotoP, totalOptPhoton;
 };
 
 #endif

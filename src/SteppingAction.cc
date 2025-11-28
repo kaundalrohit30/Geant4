@@ -70,6 +70,22 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
     G4ThreeVector preStepMom = preStepPoint->GetMomentumDirection();
     G4ThreeVector postStepMom = postStepPoint->GetMomentumDirection();
     G4double theta = acos(preStepMom*postStepMom/(preStepMom.mag()*postStepMom.mag())); //preStepMom.angle(postStepMom);
+
+
+    G4Track *Track = step->GetTrack();
+    const G4VProcess *PproductionProcess = Track->GetCreatorProcess();
+    G4String PprocessName = (PproductionProcess) ? PproductionProcess->GetProcessName() : "Primary";
+
+    G4int count = 0;
+    //G4cout << optPhotonId << "     " << currentTrackID << G4endl;
+    if(copyNo > 0 and currentParticleName == "opticalphoton" and PprocessName == "Scintillation" and optPhotonId != currentTrackID){ //" 
+        
+        optPhotonId = currentTrackID;
+        count++;
+        fEventAction->addAlloptPhoton(count);
+        
+        //G4cout << "TrackID:>  " << optPhotonId << " Creator Process:>  " << PprocessName << "  Count:>  " << count << G4endl;
+    }
     
     
     if(currentTrackParentID == 0 and currentTrackID == 1 and copyNo >0){
