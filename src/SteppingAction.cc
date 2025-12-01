@@ -76,15 +76,26 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
     const G4VProcess *PproductionProcess = Track->GetCreatorProcess();
     G4String PprocessName = (PproductionProcess) ? PproductionProcess->GetProcessName() : "Primary";
 
-    G4int count = 0;
+    /*G4int count = 0;
     //G4cout << optPhotonId << "     " << currentTrackID << G4endl;
-    if(copyNo > 0 and currentParticleName == "opticalphoton" and PprocessName == "Scintillation" and optPhotonId != currentTrackID){ //" 
+    if(copyNo > 0 and currentParticleName == "opticalphoton" and PprocessName == "Scintillation" and optPhotonId != currentTrackID and currentTrackParentID != 2){ //" 
         
         optPhotonId = currentTrackID;
         count++;
         fEventAction->addAlloptPhoton(count);
+        //G4cout << "currentTrackID:>   " << optPhotonId << "   ParentID:>   " << currentTrackParentID << G4endl;
         
         //G4cout << "TrackID:>  " << optPhotonId << " Creator Process:>  " << PprocessName << "  Count:>  " << count << G4endl;
+    }*/
+
+    if(copyNo > 0 and currentTrackID == 1 and currentStepProcess == "phot"){
+        const std::vector<const G4Track*> *primaryPhoton_Secondaries = step->GetSecondaryInCurrentStep();
+
+        if(primaryPhoton_Secondaries->size() > 1){
+            optPhotonCount = primaryPhoton_Secondaries->size() - 1;
+            fEventAction->optPhotCount(optPhotonCount);
+        }
+
     }
     
     
@@ -99,12 +110,13 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
                  //step->GetTotalEnergyDeposit();
                 fEventAction->addEdepComp(edep);
                 //G4cout << " Copy No:>  " << copyNo << " Particle:>  " << currentParticleName << "  Deposited Energy:>  " << edep  << G4endl;
+                //G4cout << "Compton>>>>>    Edep:>  " << edep << " PreStepEnergy:>  " << preStepEnergy << "   PostStepEnergy:>  " << postStepEnergy  << G4endl;
     }
 
     else if(currentTrackParentID == 0 and currentTrackID == 1 and copyNo >0 and  currentStepProcess == "phot"){
          //step->GetTotalEnergyDeposit();
         fEventAction->addEdepPhotoP(edep);
-        //G4cout << " Copy No:>  " << copyNo << " Particle:>  " << currentParticleName << "  Deposited Energy:>  " << edep  << G4endl;
+        //G4cout << "Photopr>>>>>     Edep:>  " << edep << " PreStepEnergy:>  " << preStepEnergy << "   PostStepEnergy:>  " << postStepEnergy  << G4endl;
     }
 
 
@@ -118,7 +130,7 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
     //const std::vector<const G4Track*> *electron_Secondaries = step->GetSecondaryInCurrentStep();
 
 
-    if(copyNo > 0 and currentParticleName == "e-" and creatorName == "compt"){
+    if(copyNo > 0 and currentParticleName == "e-" and creatorName == "compt" and currentTrackParentID == 1){
         //G4cout << "electronTrackID:>    " << currentTrackID << G4endl;
         const std::vector<const G4Track*> *electron_Secondaries = step->GetSecondaryInCurrentStep();
         int count = 0;
@@ -145,7 +157,7 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
     }
 
 
-    else if(copyNo > 0 and currentParticleName == "e-" and creatorName == "phot"){
+    else if(copyNo > 0 and currentParticleName == "e-" and creatorName == "phot" and currentTrackParentID == 1){
         const std::vector<const G4Track*> *electron_Secondaries = step->GetSecondaryInCurrentStep();
         int count = 0;
         for(int i = 0; i < electron_Secondaries->size(); i++){
@@ -168,7 +180,7 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
     }
 
 
-    if(copyNo > 0 and currentParticleName == "e-"){
+    if(copyNo > 0 and currentParticleName == "e-" and currentTrackParentID == 1){
         const std::vector<const G4Track*> *electron_Secondaries = step->GetSecondaryInCurrentStep();
         int count = 0;
         for(int i = 0; i < electron_Secondaries->size(); i++){

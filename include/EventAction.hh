@@ -47,15 +47,18 @@ class EventAction : public G4UserEventAction{
 
         }
 
-        void addAlloptPhoton(G4double photonNum){
-            totalOptPhoton += photonNum;
+        //void addAlloptPhoton(G4double photonNum){
+        //    totalOptPhoton += photonNum;
+        //}
+        void optPhotCount(G4double photonNum){
+            OphotonCount_Primary = photonNum;
         }
 
         
 
     private:
         G4double fEdepComp, fEdepPhotoP, fEdepTotal;
-        G4int photonNumTotal, photonNumCompton, photonNumPhotoP, totalOptPhoton;
+        G4int photonNumTotal, photonNumCompton, photonNumPhotoP, OphotonCount_Primary;//, totalOptPhoton;
 };
 
 #endif

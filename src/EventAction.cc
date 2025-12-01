@@ -8,7 +8,8 @@ EventAction::EventAction(RunAction*){
     photonNumTotal = 0;
     photonNumCompton = 0;
     photonNumPhotoP = 0;
-    totalOptPhoton = 0;
+    //totalOptPhoton = 0;
+    OphotonCount_Primary = 0;
 }
 
 EventAction::~EventAction(){
@@ -22,12 +23,15 @@ void EventAction::BeginOfEventAction(const G4Event*){
     photonNumTotal = 0;
     photonNumCompton = 0;
     photonNumPhotoP = 0;
-    totalOptPhoton = 0;
+    //totalOptPhoton = 0;
+    OphotonCount_Primary = 0;
 
     G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
+    if(eventID%1000 == 0){
     G4cout << "**************************************************************************************************************************************************" << G4endl;
     G4cout << "\v==========oooOOOOOOOooooo  Event Number:>  " << eventID << "   oooOOOOOOOooooo==========\v"<< G4endl;
     G4cout << "**************************************************************************************************************************************************" << G4endl;
+    }
 
 }
 
@@ -48,13 +52,13 @@ void EventAction::EndOfEventAction(const G4Event*){
     analysisManager->FillNtupleIColumn(1,0,photonNumCompton);
     analysisManager->FillNtupleIColumn(1,1,photonNumPhotoP);
     analysisManager->FillNtupleIColumn(1,2,photonNumTotal);
-    analysisManager->FillNtupleIColumn(1,3,totalOptPhoton);
+    analysisManager->FillNtupleIColumn(1, 3, photonNumTotal+OphotonCount_Primary);//(1,3,totalOptPhoton);
     analysisManager->AddNtupleRow(1);
 
-    //G4cout << "Compton Photons:>  " << photonNumCompton << "   Photoelectric Photons:>  " << photonNumPhotoP << "   Total:>  " << photonNumTotal << G4endl;
+    //G4cout << "Compton Photons:>  " << photonNumCompton << "   Photoelectric Photons:>  " << photonNumPhotoP << "   Total:>  " << photonNumTotal << "  All Scint Photon:>  " <<  totalOptPhoton << G4endl;
 
 
-    //if(fEdepPhotoP > 0.43)
+    //if(fEdepTotal > 0.43)
     //    G4cout << "EdepC:>  " << fEdepComp << ",  EdepP:>  " << fEdepPhotoP << ",  EdepT:>  " << fEdepTotal << G4endl;
 
     
