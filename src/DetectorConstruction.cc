@@ -12,7 +12,7 @@ DetectorConstruction::~DetectorConstruction(){
 
 void DetectorConstruction::DefineMaterial(){
 
-    //Gd₃Al₂Ga₃O₁₂
+    //Gd₃Al₂Ga₃O₁₂ 
 
     G4NistManager *nist = G4NistManager::Instance();
     
@@ -81,6 +81,34 @@ void DetectorConstruction::DefineMaterial(){
     GAGG_mat->GetIonisation()->SetBirksConstant(0. * mm / MeV);
     GAGG_mat->SetMaterialPropertiesTable(ptGAGG);
 
+/////////////form other references//////////////
+/*
+std::vector<G4double> ScintPhoEnergy = {1.76965*eV, 1.81279*eV, 1.85193*eV, 1.90466*eV, 1.96164*eV, 2.01363*eV, 2.04695*eV, 2.0801*eV, 2.10639*eV, 2.12927*eV, 2.15265*eV, 2.18225*eV, 2.20681*eV, 2.23194*eV, 2.25611*eV, 2.28082*eV, 
+                                        2.31243*eV, 2.33998*eV, 2.38503*eV, 2.43351*eV, 2.45835*eV, 2.47816*eV, 2.48357*eV, 2.4982*eV, 2.50551*eV, 2.51477*eV, 2.52405*eV, 2.53343*eV, 2.54096*eV, 2.56021*eV, 2.57581*eV, 2.59163*eV, 
+                                        2.61578*eV, 2.64044*eV};
+
+std::vector<G4double> ScintFastArray = {0.0619853, 0.0732572, 0.0938832, 0.121737, 0.155811, 0.19613, 0.232352, 0.269615, 0.322455, 0.368044, 0.413633, 0.470619, 0.515171, 0.561797, 0.604277, 
+                                        0.646757, 0.686112, 0.715104, 0.728506, 0.706637, 0.651617, 0.584159, 0.550957, 0.488695, 0.437855, 0.389087, 0.329945, 0.277028, 0.2293, 0.173255, 
+                                        0.128627, 0.0881482, 0.0466195, 0.0185756};
+
+std::vector<G4double> ScintSlowArray = {0.0229261, 0.0270951, 0.0347239, 0.0450258, 0.0576285, 0.0725411, 0.0859384, 0.0997205, 0.119264, 0.136126, 0.152987, 0.174065, 0.190543, 0.207788, 
+                                        0.2235, 0.239211, 0.253768, 0.264491, 0.269448, 0.261359, 0.241009, 0.216059, 0.203779, 0.18075, 0.161946, 0.143909, 0.122035, 0.102462, 0.0848096, 
+                                        0.0640808, 0.0475745, 0.0326027, 0.0172428, 0.00687044};
+
+G4MaterialPropertiesTable *ptGAGG = new G4MaterialPropertiesTable();
+    ptGAGG->AddProperty("RINDEX", energyGAGG, rIndexGAGG, 6);
+    ptGAGG->AddProperty("SCINTILLATIONCOMPONENT1", ScintPhoEnergy, ScintFastArray, false, true);
+    ptGAGG->AddProperty("SCINTILLATIONCOMPONENT2", ScintPhoEnergy, ScintSlowArray, false, true);
+    ptGAGG->AddConstProperty("SCINTILLATIONYIELD", 1000/MeV );//42217 / MeV);
+    ptGAGG->AddConstProperty("RESOLUTIONSCALE", 1.0);
+    ptGAGG->AddConstProperty("SCINTILLATIONTIMECONSTANT1", 52.8 * ns);
+    ptGAGG->AddConstProperty("SCINTILLATIONTIMECONSTANT2", 282 * ns);
+    ptGAGG->AddConstProperty("SCINTILLATIONYIELD1", 0.73);
+    ptGAGG->AddConstProperty("SCINTILLATIONYIELD2", 0.27);
+    ptGAGG->AddConstProperty("SCINTILLATIONRISETIME1", 8 * ns);
+    GAGG_mat->GetIonisation()->SetBirksConstant(0. * mm / MeV);
+    GAGG_mat->SetMaterialPropertiesTable(ptGAGG);*/
+
 
 
 }
@@ -137,3 +165,34 @@ G4VPhysicalVolume *DetectorConstruction::Construct(){
 void DetectorConstruction::ConstructSDandFields(){
 
 }
+
+
+/*
+
+std::vector<G4double> ScintPhoEnergy = {2.64044*eV, 2.61578*eV, 2.59163*eV, 2.57581*eV, 2.56021*eV, 2.54096*eV, 2.53343*eV, 2.52405*eV, 2.51477*eV, 2.50551*eV, 2.4982*eV, 2.48357*eV, 
+2.47816*eV, 2.45835*eV, 2.43351*eV, 2.38503*eV, 2.33998*eV, 2.31243*eV, 2.28082*eV, 2.25611*eV, 2.23194*eV, 2.20681*eV, 2.18225*eV, 2.15265*eV, 2.12927*eV, 2.10639*eV, 2.0801*eV, 
+2.04695*eV, 2.01363*eV, 1.96164*eV, 1.90466*eV, 1.85193*eV, 1.81279*eV, 1.76965*eV};
+
+std::vector<G4double> ScintFastArray = {0.0185756, 0.0466195, 0.0881482, 0.128627, 0.173255, 0.2293, 0.277028, 0.329945, 0.389087, 0.437855, 0.488695, 0.550957, 0.584159, 
+0.651617, 0.706637, 0.728506, 0.715104, 0.686112, 0.646757, 0.604277, 0.561797, 0.515171, 0.470619, 0.413633, 0.368044, 0.322455, 0.269615, 
+0.232352, 0.19613, 0.155811, 0.121737, 0.0938832, 0.0732572, 0.0619853};
+
+std::vector<G4double> ScintSlowArray = {0.00687044, 0.0172428, 0.0326027, 0.0475745, 0.0640808, 0.0848096, 0.102462, 0.122035, 0.143909, 0.161946, 0.18075, 0.203779, 0.216059, 
+0.241009, 0.261359, 0.269448, 0.264491, 0.253768, 0.239211, 0.2235, 0.207788, 0.190543, 0.174065, 0.152987, 0.136126, 0.119264, 0.0997205, 0.0859384, 
+0.0725411, 0.0576285, 0.0450258, 0.0347239, 0.0270951, 0.0229261};
+
+G4MaterialPropertiesTable *ptGAGG = new G4MaterialPropertiesTable();
+    ptGAGG->AddProperty("RINDEX", energyGAGG, rIndexGAGG, 6);
+    ptGAGG->AddProperty("SCINTILLATIONCOMPONENT1", ScintPhoEnergy, ScintFastArray, false, true);
+    ptGAGG->AddProperty("SCINTILLATIONCOMPONENT2", ScintPhoEnergy, ScintSlowArray, false, true);
+    ptGAGG->AddConstProperty("SCINTILLATIONYIELD", 1000/MeV );//42217 / MeV);
+    ptGAGG->AddConstProperty("RESOLUTIONSCALE", 1.0);
+    ptGAGG->AddConstProperty("SCINTILLATIONTIMECONSTANT1", 52.8 * ns);
+    ptGAGG->AddConstProperty("SCINTILLATIONTIMECONSTANT2", 282 * ns);
+    ptGAGG->AddConstProperty("SCINTILLATIONYIELD1", 0.73);
+    ptGAGG->AddConstProperty("SCINTILLATIONYIELD2", 0.27);
+    ptGAGG->AddConstProperty("SCINTILLATIONRISETIME1", 8 * ns);
+    GAGG_mat->GetIonisation()->SetBirksConstant(0. * mm / MeV);
+    GAGG_mat->SetMaterialPropertiesTable(ptGAGG);
+
+*/

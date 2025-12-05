@@ -8,6 +8,7 @@ RunAction::RunAction(){
     analysisManager->CreateNtupleDColumn("Energy_Deposited_Compton");
     analysisManager->CreateNtupleDColumn("Energy_Deposited_Photoelectric");
     analysisManager->CreateNtupleDColumn("Energy_Deposited_Total");
+    analysisManager->CreateNtupleDColumn("BE_dist_photoE");
     analysisManager->FinishNtuple(0);
 
     analysisManager->CreateNtuple("Photon_Count", "Photon_Count");
@@ -15,6 +16,7 @@ RunAction::RunAction(){
     analysisManager->CreateNtupleIColumn("Scintillation_Photon_Count_Dist_Photoproduction");
     analysisManager->CreateNtupleIColumn("Scintillation_Photon_Count_Dist_Total");
     analysisManager->CreateNtupleIColumn("Total_Photon_Count");
+    analysisManager->CreateNtupleIColumn("Photoproduced_Photon_Count");
 
     analysisManager->FinishNtuple(1);
 

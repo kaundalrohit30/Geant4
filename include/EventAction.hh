@@ -24,8 +24,9 @@ class EventAction : public G4UserEventAction{
             
         }
 
-        void addEdepPhotoP(G4double Edep){
+        void addEdepPhotoP(G4double Edep, G4double BE){
             fEdepPhotoP += Edep;
+            fBE_Photop += BE;
             
         }
 
@@ -51,13 +52,13 @@ class EventAction : public G4UserEventAction{
         //    totalOptPhoton += photonNum;
         //}
         void optPhotCount(G4double photonNum){
-            OphotonCount_Primary = photonNum;
+            OphotonCount_Primary += photonNum;
         }
 
         
 
     private:
-        G4double fEdepComp, fEdepPhotoP, fEdepTotal;
+        G4double fEdepComp, fEdepPhotoP, fEdepTotal, fBE_Photop;
         G4int photonNumTotal, photonNumCompton, photonNumPhotoP, OphotonCount_Primary;//, totalOptPhoton;
 };
 

@@ -4,6 +4,7 @@
 EventAction::EventAction(RunAction*){
     fEdepComp = 0;
     fEdepPhotoP = 0;
+    fBE_Photop = 0;
     fEdepTotal = 0;
     photonNumTotal = 0;
     photonNumCompton = 0;
@@ -19,6 +20,7 @@ EventAction::~EventAction(){
 void EventAction::BeginOfEventAction(const G4Event*){
     fEdepComp = 0;
     fEdepPhotoP = 0;
+    fBE_Photop = 0;
     fEdepTotal = 0;
     photonNumTotal = 0;
     photonNumCompton = 0;
@@ -27,11 +29,11 @@ void EventAction::BeginOfEventAction(const G4Event*){
     OphotonCount_Primary = 0;
 
     G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
-    if(eventID%1000 == 0){
+    //if(eventID%1000 == 0){
     G4cout << "**************************************************************************************************************************************************" << G4endl;
     G4cout << "\v==========oooOOOOOOOooooo  Event Number:>  " << eventID << "   oooOOOOOOOooooo==========\v"<< G4endl;
     G4cout << "**************************************************************************************************************************************************" << G4endl;
-    }
+    //}
 
 }
 
@@ -47,12 +49,14 @@ void EventAction::EndOfEventAction(const G4Event*){
     analysisManager->FillNtupleDColumn(0,1,fEdepComp);
     analysisManager->FillNtupleDColumn(0,2,fEdepPhotoP);
     analysisManager->FillNtupleDColumn(0,3,fEdepTotal);
+    analysisManager->FillNtupleDColumn(0,4,fBE_Photop);
     analysisManager->AddNtupleRow(0);
 
     analysisManager->FillNtupleIColumn(1,0,photonNumCompton);
     analysisManager->FillNtupleIColumn(1,1,photonNumPhotoP);
     analysisManager->FillNtupleIColumn(1,2,photonNumTotal);
     analysisManager->FillNtupleIColumn(1, 3, photonNumTotal+OphotonCount_Primary);//(1,3,totalOptPhoton);
+    analysisManager->FillNtupleIColumn(1, 4, OphotonCount_Primary);
     analysisManager->AddNtupleRow(1);
 
     //G4cout << "Compton Photons:>  " << photonNumCompton << "   Photoelectric Photons:>  " << photonNumPhotoP << "   Total:>  " << photonNumTotal << "  All Scint Photon:>  " <<  totalOptPhoton << G4endl;
