@@ -38,16 +38,30 @@ PrimaryGenerator::~PrimaryGenerator(){
 
 void PrimaryGenerator::GeneratePrimaries(G4Event *anEvent){
 
-    G4double px = abs(G4UniformRand()-0.5);
-    G4double py = abs(G4UniformRand()-0.5);
+    G4double px1 = (G4UniformRand()-0.5);
+    G4double py1 = (G4UniformRand()-0.5);
+    G4double px2 = (G4UniformRand()-0.5);
+    G4double py2 = (G4UniformRand()-0.5);
     G4double pz = 1;
-    G4ThreeVector mom(px,py,pz); 
+    
+    G4ThreeVector mom1(px1,py1,pz);
+    G4ThreeVector mom2(px2,py2,pz);
+    G4ThreeVector mom3(px1, py2, pz);
+    G4ThreeVector pol1 = mom1.cross(mom2);
+    pol1 = pol1.unit();
+    G4ThreeVector pol2 = -mom1.cross(pol1);
+    //G4ThreeVector pol2 = -mom1.cross(mom3);  
+    pol2 = pol2.unit();
 
-    fParticleGun1->SetParticleMomentumDirection(mom);
+    //G4cout << "Pol1.Pol2:>  " << pol1*pol2 << G4endl;
+
+    fParticleGun1->SetParticleMomentumDirection(mom1);
+    fParticleGun1->SetParticlePolarization(pol1);
     fParticleGun1->SetParticleEnergy(511*keV);
     fParticleGun1->GeneratePrimaryVertex(anEvent);
 
-    fParticleGun2->SetParticleMomentumDirection(-mom);
+    fParticleGun2->SetParticleMomentumDirection(-mom1);
+    fParticleGun2->SetParticlePolarization(pol2);
     fParticleGun2->SetParticleEnergy(511*keV);
     fParticleGun2->GeneratePrimaryVertex(anEvent);
 

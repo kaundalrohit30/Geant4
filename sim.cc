@@ -7,8 +7,8 @@
 #include "G4VisExecutive.hh"
 
 #include "PhysicsList.hh"
-//#include "DetectorConstruction.hh"
-#include "DetectorConstruction_LYSO.hh"
+#include "DetectorConstruction.hh"
+//#include "DetectorConstruction_LYSO.hh"
 #include "ActionInitialization.hh"
 
 
@@ -24,8 +24,8 @@ int main(int argc, char** argv){
 
     //Physics List
     runManager->SetUserInitialization(new PhysicsList());
-    //runManager->SetUserInitialization(new DetectorConstruction());
-    runManager->SetUserInitialization(new DetectorConstruction_LYSO());
+    runManager->SetUserInitialization(new DetectorConstruction());
+    //runManager->SetUserInitialization(new DetectorConstruction_LYSO());
     runManager->SetUserInitialization(new ActionInitialization());
 
     if(argc == 1){
@@ -42,9 +42,13 @@ int main(int argc, char** argv){
 
     G4UImanager *UImanager = G4UImanager::GetUIpointer();
 
+    UImanager->ApplyCommand("/run/setCutForAGivenParticle e- 0.01 mm");
+    UImanager->ApplyCommand("/run/setCutForAGivenParticle e+ 0.01 mm");
+    UImanager->ApplyCommand("/run/setCutForAGivenParticle gamma 0.01 mm");
     if(ui){
     UImanager->ApplyCommand("/control/execute vis.mac");
-
+    
+    //UImanager->ApplyCommand("/tacking/verbose 1");
     //UImanager->ApplyCommand("/vis/open OGL");
     //UImanager->ApplyCommand("/vis/niewer/set/viewpointVector 1 1 1");
     //UImanager->ApplyCommand("/vis/drawVolume");

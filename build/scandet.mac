@@ -1,3 +1,0 @@
-/detector/nCols {cols}
-/run/reinitializeGeometry true
-/run/beamOn 100
