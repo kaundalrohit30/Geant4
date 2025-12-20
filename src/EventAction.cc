@@ -126,7 +126,7 @@ void EventAction::EndOfEventAction(const G4Event*){
 
     //G4cout << photDetPos1.y() - comptDetPos1.y() << "  " << photDetPos1.x() - comptDetPos1.x() << "  " << (photDetPos1.y() - comptDetPos1.y())/ (photDetPos1.x() - comptDetPos1.x()) << "   " << phi1 << G4endl;
 
-    if(comptCount1 == 1 and photCount1 == 1 and (dy1/dx1 >= 0 or dy1/dx1 < 0));// and comptCount2 == 1 and photCount2 == 1 and (dy2/dx2>=0 or dy2/dx2 < 0)){//} and comptCount2 == 1 and photCount2 == 1 and (phi2>=0 or phi2 < 0) ){
+    if(comptCount1 == 1 and photCount1 == 1 and (dy1/dx1 >= 0 or dy1/dx1 < 0)){// and comptCount2 == 1 and photCount2 == 1 and (dy2/dx2>=0 or dy2/dx2 < 0)){//} and comptCount2 == 1 and photCount2 == 1 and (phi2>=0 or phi2 < 0) ){
         //G4cout << photDetPos1.y() - comptDetPos1.y() << "  " << photDetPos1.x() - comptDetPos1.x() << "  " << (photDetPos1.y() - comptDetPos1.y())/ (photDetPos1.x() - comptDetPos1.x()) << "   " << phi1 << G4endl;
         //G4cout << "Selected Module1:>  " << comptCount1<<","<< photCount1 << G4endl;
 
