@@ -26,6 +26,8 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
     G4double postStepEnergy = postStepPoint->GetKineticEnergy();
     edep = preStepEnergy - postStepEnergy;
 
+    G4ThreeVector momDir = preStepPoint->GetMomentumDirection();
+
     const G4VProcess *process = postStepPoint->GetProcessDefinedStep();
     //const G4VProcess *process = preStepPoint->GetProcessDefinedStep();
     //G4String currentStepProcess = (process) ? process->GetProcessName() : "Gun";
@@ -42,8 +44,8 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
     //const G4VTouchable *touchable = postStepPoint->GetTouchable();
     G4int copyNo = touchable->GetCopyNumber();
     //G4cout << "Copy Number" << copyNo << G4endl;
-    //G4VPhysicalVolume *physDet = touchable->GetVolume();
-    //G4ThreeVector posDet = physDet->GetTranslation();
+    G4VPhysicalVolume *physDet = touchable->GetVolume();
+    G4ThreeVector posDet = physDet->GetTranslation();
 
     G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
     /*if(copyNo > 0){
@@ -122,9 +124,23 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
         analysisManager->AddNtupleRow(0);
         
         //G4cout << "RecoTheta:>  " << recoTheta << G4endl;
-    } */
+    }*/
 
 
+    ///////////////To Check the uniform distribution of hits by the primary photons//////////////////////////
+    
+    
+    /*int count1;
+    if(copyNo > 0 and currentTrackID == 1 and currentTrackParentID == 0 and count1 < 1 and (currentStepProcess == "compt" or currentStepProcess == "phot" or currentStepProcess == "Rayl") ){
+        count1 = 1;
+        analysisManager->FillNtupleDColumn(0,0,posDet[0]);
+        analysisManager->FillNtupleDColumn(0,1,posDet[1]);
+        analysisManager->FillNtupleDColumn(0,2,posDet[2]);
+        analysisManager->AddNtupleRow(0);
+
+    }*/
+
+    
 
 
 
@@ -294,12 +310,12 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
 
     ////for azimuthal angle calculation///////////
 
-    G4VPhysicalVolume *physScintillator = touchable->GetVolume();
-    G4ThreeVector posDet = physScintillator->GetTranslation();
+    
     
     if(copyNo > 0 and currentTrackID == 1 and currentTrackParentID == 0 and currentStepProcess == "compt"){
         compt_Count1 = 1;
-        fEventAction->ComptCount1(compt_Count1, posDet, simTheta);//posDet[0], posDet[1], posDet[2], simTheta);
+        recoTheta = acos(1-eMass*(1/postStepEnergy - 1/preStepEnergy))*(180/M_PI);
+        fEventAction->ComptCount1(compt_Count1, posDet, recoTheta);//posDet[0], posDet[1], posDet[2], simTheta);
         //G4cout << posDet << G4endl;
         
     }
@@ -312,7 +328,8 @@ void SteppingAction::UserSteppingAction(const G4Step *step){
 
     if(copyNo < 0 and currentTrackID == 2  and currentTrackParentID == 0 and currentStepProcess == "compt"){
         compt_Count2 = 1;
-        fEventAction->ComptCount2(compt_Count2, posDet, simTheta);//posDet[0], posDet[1], posDet[2], simTheta);
+        recoTheta = acos(1-eMass*(1/postStepEnergy - 1/preStepEnergy))*(180/M_PI);
+        fEventAction->ComptCount2(compt_Count2, posDet, recoTheta);//posDet[0], posDet[1], posDet[2], simTheta);
         
     }
 

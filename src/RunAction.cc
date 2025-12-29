@@ -61,9 +61,37 @@ RunAction::RunAction(){
     analysisManager->CreateNtupleDColumn("PixelDistance2");
     analysisManager->FinishNtuple(1);
 
-    /*analysisManager->CreateNtuple("Dphi", "Dphi");
-    analysisManager->CreateNtupleDColumn("dPhi_dist");
+    //analysisManager->CreateNtuple("Dphi", "Dphi");
+    //analysisManager->CreateNtupleDColumn("dPhi_dist");
+    //analysisManager->FinishNtuple(2);
+
+    /*analysisManager->CreateNtuple("Hit", "Hit");
+    analysisManager->CreateNtupleDColumn("hitX");
+    analysisManager->CreateNtupleDColumn("hitY");
+    analysisManager->CreateNtupleDColumn("hitZ");
+    analysisManager->FinishNtuple(0);
+
+    analysisManager->CreateNtuple("Momentum", "Momentum");
+    analysisManager->CreateNtupleDColumn("Px");
+    analysisManager->CreateNtupleDColumn("Py");
+    analysisManager->CreateNtupleDColumn("Pz");
+    //analysisManager->CreateNtupleDColumn("magP");
+    analysisManager->FinishNtuple(1);
+
+    analysisManager->CreateNtuple("Polarization", "Polarization");
+    analysisManager->CreateNtupleDColumn("Pol1.mom1");
+    analysisManager->CreateNtupleDColumn("Pol2.mom1");
+    analysisManager->CreateNtupleDColumn("Pol1.Pol2");
+    analysisManager->CreateNtupleDColumn("Pol1X");
+    analysisManager->CreateNtupleDColumn("Pol1Y");
+    analysisManager->CreateNtupleDColumn("Pol1Z");
+    analysisManager->CreateNtupleDColumn("Pol2X");
+    analysisManager->CreateNtupleDColumn("Pol2Y");
+    analysisManager->CreateNtupleDColumn("Pol2Z");
+    analysisManager->CreateNtupleDColumn("mom2.mom3");
+    //analysisManager->CreateNtupleDColumn("magP");
     analysisManager->FinishNtuple(2);*/
+
 
     
 }
@@ -80,7 +108,7 @@ void RunAction::BeginOfRunAction(const G4Run *run){
     std::stringstream strRunID;
     strRunID << runID;
 
-    analysisManager->OpenFile("output_corrGamma_bothModule_true_" + strRunID.str() + ".root");
+    analysisManager->OpenFile("output_UnCorrelated_BothGamma_selected_100M" + strRunID.str() + ".root");
 }
 
 void RunAction::EndOfRunAction(const G4Run *run){

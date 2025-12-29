@@ -26,12 +26,15 @@ void ActionInitialization::Build() const{
 
     PrimaryGenerator *generator = new PrimaryGenerator();
     SetUserAction(generator);
-
+    
     RunAction *runAction = new RunAction();
     SetUserAction(runAction);
 
     EventAction *eventAction = new EventAction(runAction);
     SetUserAction(eventAction);
+
+    //PrimaryGenerator *generator = new PrimaryGenerator(eventAction);
+    //SetUserAction(generator);
 
     SteppingAction *steppingAction = new SteppingAction(eventAction);
     SetUserAction(steppingAction);

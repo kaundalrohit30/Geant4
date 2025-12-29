@@ -35,6 +35,9 @@ EventAction::EventAction(RunAction*){
     comptDetPos2 = {0,0,0};
     photDetPos2 = {0,0,0};
 
+    //orthogonality = 0;
+
+
 }
 
 EventAction::~EventAction(){
@@ -75,11 +78,11 @@ void EventAction::BeginOfEventAction(const G4Event*){
     photDetPos2 = {0,0,0};
 
     G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
-    //if(eventID%1000 == 0){
+    if(eventID%1000 == 0){
     G4cout << "**************************************************************************************************************************************************" << G4endl;
     G4cout << "\v==========oooOOOOOOOooooo  Event Number:>  " << eventID << "   oooOOOOOOOooooo==========\v"<< G4endl;
     G4cout << "**************************************************************************************************************************************************" << G4endl;
-    //}
+    }
 
 }
 
@@ -115,30 +118,50 @@ void EventAction::EndOfEventAction(const G4Event*){
     phi2 = atan2(dy2, dx2)*(180/M_PI); //atan((photY2 - comptY2)/(photX2-comptX2))*(180/M_PI);
     D1 = sqrt((photDetPos1.x() - comptDetPos1.x())*(photDetPos1.x() - comptDetPos1.x()) + (photDetPos1.y() - comptDetPos1.y())*(photDetPos1.y() - comptDetPos1.y()));
     D2 = sqrt((photDetPos2.x() - comptDetPos2.x())*(photDetPos2.x() - comptDetPos2.x()) + (photDetPos2.y() - comptDetPos2.y())*(photDetPos2.y() - comptDetPos2.y()));
-    //if(phi1>=0 or phi1 < 0)
-    //G4cout << "Phi1:>   " << phi1 << "   Theta1:>   " << Theta1 << "   Phi2:>  "<< phi2 << "   Theta2:>   " << Theta2 << G4endl;
-    //if(phi1>=0 or phi1 < 0){}
-    //else{
-    //    G4cout << comptY1-photY1 << "/" << comptX1-photX1 << "      " << comptY2-photY2 << "/" <<  comptX2-photX2 << G4endl;
-    //}
-
-    //G4cout << "compt,PhotCount Module1:>  " << comptCount1<<","<< photCount1 << "   compt,PhotCount Module2:>  " << comptCount2<<","<< photCount2 << G4endl;
-
-    //G4cout << photDetPos1.y() - comptDetPos1.y() << "  " << photDetPos1.x() - comptDetPos1.x() << "  " << (photDetPos1.y() - comptDetPos1.y())/ (photDetPos1.x() - comptDetPos1.x()) << "   " << phi1 << G4endl;
-
-    if(comptCount1 == 1 and photCount1 == 1 and (dy1/dx1 >= 0 or dy1/dx1 < 0)){// and comptCount2 == 1 and photCount2 == 1 and (dy2/dx2>=0 or dy2/dx2 < 0)){//} and comptCount2 == 1 and photCount2 == 1 and (phi2>=0 or phi2 < 0) ){
-        //G4cout << photDetPos1.y() - comptDetPos1.y() << "  " << photDetPos1.x() - comptDetPos1.x() << "  " << (photDetPos1.y() - comptDetPos1.y())/ (photDetPos1.x() - comptDetPos1.x()) << "   " << phi1 << G4endl;
-        //G4cout << "Selected Module1:>  " << comptCount1<<","<< photCount1 << G4endl;
-
-        //analysisManager->FillNtupleDColumn(0, 0, comptEdep1);
-        //analysisManager->FillNtupleDColumn(0, 1, photEdep1);
-        //G4cout << "phi:>   " << phi1 << "   dy =  " << comptY1-photY1 << "   dx =  " << comptX1-photX1 << "  dy/dx = " << (comptY1-photY1)/(comptX1-photX1) << G4endl;
+    
+    if(comptCount1 == 1 and photCount1 == 1 and (dy1/dx1 >= 0 or dy1/dx1 < 0) and D1 >= 3.2 and comptCount2 == 1 and photCount2 == 1 and (dy2/dx2>=0 or dy2/dx2 < 0) and D2 >= 3.2){//}
+        
         analysisManager->FillNtupleDColumn(0, 0, phi1);
         analysisManager->FillNtupleDColumn(0, 1, Theta1);
         analysisManager->FillNtupleDColumn(0, 2, D1);
         analysisManager->AddNtupleRow(0);
 
-        /*analysisManager->FillNtupleDColumn(1, 0, phi2);
+        analysisManager->FillNtupleDColumn(1, 0, phi2);
+        analysisManager->FillNtupleDColumn(1, 1, Theta2);
+        analysisManager->FillNtupleDColumn(1, 2, D2);
+        analysisManager->AddNtupleRow(1);
+//  
+        
+
+    }
+    
+    
+    /*if(comptCount2 == 1 and photCount2 == 1 and (dy2/dx2>=0 or dy2/dx2 < 0) and D2 > 3.2){
+        //G4cout << "Selected Module2:>  " << comptCount2<<","<< photCount2 << G4endl;
+        //analysisManager->FillNtupleDColumn(1, 0, comptEdep2);
+        //analysisManager->FillNtupleDColumn(1, 1, photEdep2);
+        analysisManager->FillNtupleDColumn(1, 0, phi2);
+        analysisManager->FillNtupleDColumn(1, 1, Theta2);
+        analysisManager->FillNtupleDColumn(1, 2, D2);
+        analysisManager->AddNtupleRow(1);
+    }*/
+
+    
+    //analysisManager->FillNtupleDColumn(0, 0, RecoTheta);
+    //analysisManager->FillNtupleDColumn(0, 1, SimTheta);
+    //analysisManager->FillNtupleDColumn(0, 2, RecoEta);
+    //analysisManager->AddNtupleRow(1);
+
+    //G4cout << orthogonality << G4endl;
+
+
+}
+
+
+
+
+
+/*analysisManager->FillNtupleDColumn(1, 0, phi2);
         analysisManager->FillNtupleDColumn(1, 1, Theta2);
         analysisManager->FillNtupleDColumn(1, 2, D2);
         analysisManager->AddNtupleRow(1);
@@ -151,36 +174,6 @@ void EventAction::EndOfEventAction(const G4Event*){
 
         analysisManager->FillNtupleDColumn(2,0,dPhiUncorr);
         analysisManager->AddNtupleRow(2);*/
-
-    }
-    
-    
-    if(comptCount2 == 1 and photCount2 == 1 and (dy2/dx2>=0 or dy2/dx2 < 0)){
-        //G4cout << "Selected Module2:>  " << comptCount2<<","<< photCount2 << G4endl;
-        //analysisManager->FillNtupleDColumn(1, 0, comptEdep2);
-        //analysisManager->FillNtupleDColumn(1, 1, photEdep2);
-        analysisManager->FillNtupleDColumn(1, 0, phi2);
-        analysisManager->FillNtupleDColumn(1, 1, Theta2);
-        analysisManager->FillNtupleDColumn(1, 2, D2);
-        analysisManager->AddNtupleRow(1);
-    }
-
-    
-    //analysisManager->FillNtupleDColumn(0, 0, RecoTheta);
-    //analysisManager->FillNtupleDColumn(0, 1, SimTheta);
-    //analysisManager->FillNtupleDColumn(0, 2, RecoEta);
-    //analysisManager->AddNtupleRow(1);
-
-    
-
-
-}
-
-
-
-
-
-
 
     /*comptX1=0;
     comptY1=0;

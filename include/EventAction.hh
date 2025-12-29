@@ -101,10 +101,13 @@ class EventAction : public G4UserEventAction{
             //photEdep2 = Edep;
         }
 
+        //void checkOrthogonality(G4double val){
+        //    orthogonality = val;
+        //}
         
 
     private:
-        G4double fEdepComp, fEdepPhotoP, fEdepTotal, fBE_Photop, Theta1, Theta2, phi1, phi2, D1, D2;//, recoTheta, simTheta, recoEta;
+        G4double fEdepComp, fEdepPhotoP, fEdepTotal, fBE_Photop, Theta1, Theta2, phi1, phi2, D1, D2;//, orthogonality;//, recoTheta, simTheta, recoEta;
         G4int photonNumTotal, photonNumCompton, photonNumPhotoP, OphotonCount_Primary, photonNumFluorescence, comptCount1, comptCount2, photCount1, photCount2;//, totalOptPhoton;
         //G4double comptX1, comptY1, comptZ1, photX1, photY1, photZ1, comptX2, comptY2, comptZ2, photX2, photY2, photZ2, Theta1, Theta2, phi1, phi2, D1, D2;
         G4ThreeVector comptDetPos1, photDetPos1, comptDetPos2, photDetPos2;
